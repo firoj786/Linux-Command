@@ -1,0 +1,883 @@
+What is Linux Operation system ?
+
+Linux is an Multi-User and Multi-tasking operating system that is feely distributed under GNU (general public license).
+
+
+
+What is an operating system ,what does it do?
+It acts as an layer between end-user and the hardware of the computer.All the instruction passed by the end-user will be translated into CPU Instruction set and gets them executed on the underlying HARDWARE .So that end-user can use the computer without worrying about the system /Hardware configuration of the machine.
+
+
+----------------------------------------------------------------------------
+
+Linux is an operating system =it is helpful for achieving hardware portability ,and interacts with the underlying hardware of machine .
+
+
+
+Linux has a key component called "kernel"that defines the operating system.
+
+
+
+UNIX=Commercial source /runtime
+ 
+LINUX=Free distributed and freely modifiable (open source )="kernel"=command -line integration.
+
+
+
+What is an operating System?
+
+Acts an an interface between end-user and hardware of the computer along with that it helps us in achieving the hardware portability.
+
+
+
+What is programming language ?
+
+Programming language provides english like instruction set that can be used for programming the computer easily.
+They provide compilers for every platform so that the instructions can be translated into platform.
+
+
+
+Kernel?=core component of linux operating system that interfacts with the hardware of the computer .
+
+
+
+Widows 10=cpu/ram =2ghb ram
+Linux Ubuntu 20.0=300 MB RAM /1 core CPU.
+
+
+Very very most
+
+What is the file system?
+
+Organizing and storIng the data on the computer hardware .
+2-File system is a technic or a way of storing and organizing the data on the physical storage devices of a computer like 1-Harddisk 2-Pendrive 3-CD Rom.
+-----------------------------------------------------------------------
+
+What is file ?
+
+File is a data structure in which we store the address location of the actual data where does is resides on the storage  device .
+  
+                                          Or
+
+ It's a pointer to the actual location of the data on  storage  device.                                    
+-----------------------------------------------------------------------------------
+
+--->Linux operation system as part of it's installation creates some default files/directories on the storage device. it is important tha we understand the directory structure that would gets created out of box.
+
+
+/[root]
+
+|-/bin[binary /executable]=the linux system commands
+.
+          /bash commands are placed in this directory.
+
+
+|-/boot=[boot loader file in starting the linux OS ]
+
+
+|-/dev=[device all the system devices are mounted on/dev]
+           
+  [/dev/sdv0/][/dev/sdv1]
+
+
+|-/mnt=[all the remote system directories are mounted into this directory].
+
+
+|-/media=[headphones/music player]
+
+
+|-/usr=[programs /softwares under this directory are shared to all users of linux]
+
+|-/proc=[process under execution and their information is kept as files in this directory]
+
+
+|-/lib=[shared libraries across the s/w will be placed here]
+
+
+|-/tmp=[temporary system file]
+
+|-/var=[linux system logs and very large files]
+
+|-/etc=[linux system configurations files]
+
+
+|-/opt=software package will be kept here
+ 
+
+|-/sbin =super user bash command
+ 
+
+|-/home=per user one home directory gets created .
+----------------------------------------------------------------------------------------
+
+Shell=>Shell is a software program /utility program that provides bunch of commands using which we can 
+Interact with kernal of the linux operating system.this helps us in ease the interactions with linux.
+
+
+
+Basically there are 2 types shell are there. 
+
+
+Bourne/Bash Shell
+
+C shell 
+
+Bourne Shell.
+ -Bourne (SH)
+    
+ -Bourne Again Shell (BASH)-it'a better version
+  of Bourne Shell (SH).
+    
+ -Korn Shell
+    
+ -POSIX Shell -(Portable operating system interface).
+    
+ -
+C Shell 
+  
+ -C Shell 
+-C programming 
+  
+ -TCSH(Tenex Shell)-extension C Shell +History ,up arrow,
+      
+ Down arrow ,inline editing.
+   ------------------------------------------------------------------------------------
+
+[Ctrl=right side on the keyboard ].
+
+Ctrl+C=Scaled Mode (Menu Hide/show).
+
+Ctrl+F=Fullscrean mode.
+--------------------------------------------------------------------------------
+----------------------------Linux Terminal
+ 1.ctrl+c=kills the current running process.stop
+    
+  2.ctrl+l=clear the screen 
+     
+ 3.ctrl+a=moves the cursor to the beginning of the line.
+      
+4.ctrl+e=move the cursor to the end of the line.
+      
+5.ctrl+u=deletes the characters from the current cursor 
+ Position to the beginning of the line.
+     
+ 6.ctrl+k=deletes the character from the current cursor Position to the end of the line.
+      
+7.ctrl+r=search in the history of commands 
+      
+8.up arrow=brings previously typed commands 
+     
+ 9.down arrow =will navigates back to the curret
+ Commands.   
+ 
+10.ctrl+left arrow=moves one word to the left of Current cursor position.    
+       11.ctrl+right arrow=moves one word to the right of 
+Current cursor position.    
+       12.ctrl+shift+c=copy text.
+       
+13.ctrl+shift+v=paste text.  
+       
+----------------------------------------------------------------------------    
+ 
+Cd=change directory  
+
+Cd..=moves you to the parent directory.
+
+PWD=print working directory.   
+
+
+
+Touch is command used for creating an empty file.
+
+Syntax:
+
+Touch filename=creates an empty file in the present working directory.  
+
+
+echo is used for displaying the text on the terminal.
+
+echo "Good Morning "=it prints "Good Morning" to terminal
+
+.
+cat filename=displays the content of the file.
+ 
+Create an empty file and write content into it.
+ 
+ 
+
+Touch filename 
+
+ echo "firoj" > filename     
+
+ -----------------------------------------------------------------------------------------------------
+1.pwd=print working directory =to find the directory location in which we are in.
+  
+  
+
+2.touch filename=creates an empty file under the current directory location .
+
+
+
+3.cat filename =show the contents of the file.
+
+
+
+4.echo "text"=will write the text on to the console .
+
+
+
+5.echo "text" > filename =with this we can write some text content into an exiting file.Here ">" is a redirection operator 
+To write the output to diff location.
+
+   echo "text" > filename ,if the doesn't exists a new file with that text content.      
+   
+
+
+6.cd directoryName=change directory.
+
+
+7.ls =list files and folders under the current directory.
+
+
+------------------------------×××××××××××××××××××××××××××××××× 
+---- 
+ How to create a directory.
+  
+mkdir  directoryName=this creates an directory with the specified name under current directory .
+Delete=rm -rf directory Name
+
+
+  
+ls directoryName=to see the contents of a directory .
+
+
+
+Cd directoryName =to change to the newly created directory .
+
+
+"."=refers to current location /directory.
+ 
+".."=refers to parent of the current directory.
+
+
+
+cd..=takes you to the parent directory of the current directory.
+Cd =without any input takes you to the home directory of the user .[for.e.g../home/sensen].
+
+
+
+Cd~[Tilda=below the escape key on keyboard ]=takes you to the home directory .always "~" refers to home directory location of the user.
+
+
+
+You can view structure of a directory by using tree commands .Tree is a utility that will not available by default as part Ubuntu distro.we need to install.
+---------------------------+++-------------
+
+sudo apt-get 
+update 
+sudo apt-get install tree
+
+ 
+
+Cat filename=cat command takes the data from somewhere and print it.
+
+Cat filename =it takes input from file and displays on to the console.
+
+
+
+Cat =takes the input from input device /keyboard /console we have to type ctrl+d to terminate the cat.
+
+
+
+Touch filename
+echo "firoj" > filename 
+Cat > filename.txt =this takes the data from input /keyboard and redirects /writes the output to filename .
+××××××××××××××××××××××××××××××××××××××××××××××××
+
+
+Head -5 filename=show top five line of a file [default =10].
+Tail -5 filename =shows bottom five line [default =10].
+Tail -f filename=keep hold of the and shows the flow of data.
+
+Mkdir -p /dir1/dir2 =creates the directories including the parents.
+
+
+ls =show files/directories with color.
+ls --color=none =display files/directories with no color.
+
+-----------------------------------------------------------------------------------------
+
+Expression we can use as part of the command .
+  *=Multiple character match 
+  {}=Range expression.
+  ?=single character match.
+  
+
+
+  ls a* =shows the contents of the directories which start with a or gives names of the files start with a.
+
+
+
+ls {.txt,.png}=shows the files with any of those two extensions.
+
+ls ???=shows contents of the directories of 3 character in length .
+
+------------------------------------------------------------------
+
+
+rm filename=for removing a file .
+
+rm -f filename =force remove file.
+
+rmdir directory =removes the directory if it is empty .
+
+
+
+rm directory =we cannot remove directory.
+
+rm -r directory =here -r stands for recursively
+ remove so if you directory as an input it removes 
+files/directories inside it including that directory.
+
+==============================================
+
+
+CP file1 path/filename
+ 
+~/accounting/finance.txt
+
+~/accounting$ CP finance.txt
+ finance_final.txt[source directories are same so we told the filename into which it should copied .So ,cp creates a new file with destinationName and copies the content ]
+
+
+
+~/accounting$ cp finance.txt ~/accounting/backup[destination is diff so the current file will be copied]
+
+~/accounting$ cp finance.txt 
+~/accountings/financebackup.txt
+
+
+CP -R dir1 destination Path=to copy contents of a directory include that directory.
+
+CP file1 file2 file3 destination
+ 
+
+########################################
+
+mv[move]=is used for moving files/folder from one location to another.it can also be used for rename when 
+Source/destination  are same 
+
+~/accounting$ finance 
+
+~/balance _sheet
+
+ 
+
+
+
+~$ mv accounting/finance balance_sheet 
+
+~$ mv accounting/finance accounting/finance-2020
+
+//rename 
+
+~$ mv file1 file2 file3 destination
+/
+~$ mv -R director1 destination/
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+tr =is used for deleting ,replacing or changing to upper or lower letters of a given  character delete or replace works on only one character .
+
+ " | tr "[:lower:] "[:upper:]
+
+echo "Good Morning" | tr [a-z] [A-Z]
+
+echo "Good Morning" | tr M E
+
+echo "Good Morning" | tr -d M
+
+echo "Good Morning" | tr -d o d
+
+echo "Good Morning" | tr [:space:]
+
+echo "Time is 7 o'clock" | tr -d [:digit:]
+
+
+
+tr h l
+
+tr -d h
+
+tr [:upper:] [:lower:]
+tr[:digit:]n=every digit should be replaced with 'n' char.
+
+tr[:space:]x=every space character is replaced with 'x' char
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+WC=word count can be used
+ 
+-l=lines
+
+-c=characters
+
+-w=words 
+
+
+
+Cat file1 |wc -l (or)wc -l filename 
+Cat file1 | wc -c 
+Cat file1 | wc -w
+Cat file1 | wc -lcw
+ 
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+---------Very very most command--------
+
+Find=find is command used for finding the files on your linux files system based on name of the file.
+
+Syntex :-
+Find directory -name "[pattern]"[by default -print is enabled]
+
+Find directory -name "pattern" -print [display the contents in one single line].=here we want find to look for a file under specified directory of that  pattern.print prints the complete path of the file from root location and by default print is enabled even don't pass.
+
+
+
+Find directory -name "pattern" -empty=prints only the files which are empty.
+
+
+
+Find directory -name "pattern" -exce command {} \;=-exec indicates execute the command supplied here by passing all the files matching with that criteria.
+
+
+
+\;=termination of the command.
+
+ls -Rlhr logs
+
+
+
+Find directory -name "pattern" -o -name "pattern" = -o stands for "or" means either matching first pattern or matching second pattern.
+
+
+
+find . -name "*.log"
+
+find . -name "*.tmp"
+
+find . -name "*.out"
+
+find . -name ".log" -o -name ".out" -o -name "*.tmp"
+
+
+
+find logs tmp -name ".log" -exec rm {} \; - o -name ".out"
+ -exec rm {}\; -o -name "*.tmp" -exec rm {} \;
+
+
+
+????????????????????????????????????????!!!!!!!!!!!!!!!!
+
+Grep=grep is command for searching a text in a file or find the matching contents files.
+
+
+
+Syntex and options of the grep:-
+Grep=text fileName=it searches for the given text in the specified.fike and prints matching lines.
+
+Grep -R "text" directory =It searches recursively into all the files and and subdirectories with that matching content and display along with matching textline the patch of the file also.
+
+
+
+Grep -n "text" fileName =along with matching lines it displays line number.
+
+ 
+
+Grep -iR "text" directory =ignore case comparison.
+
+Grep -oR "text" directory =output the matches in individual lines.
+
+Grep -w "text" filename=matches the whole words.
+
+Grep -c"text" filename=count of occurrences. 
+
+Grep -digit "text" filename=display the no of lines around the matching lines.
+
+
+
+
+Mostly linux operating system is used in server-based install[headless]
+
+1.less computing resources 
+
+2.highly secured
+
+ 
+
+-----Very very Imp-----
+
+Text Editor (CUI).
+
+1.VIM [VI]
+
+2.Nano 
+
+
+
+------------VI----------
+
+VI=Default text editor available in most of the linux distros.
+
+
+
+--------------There Are 3 modes of VI Editor--------------
+
+1.command mode
+ 
+In command mode we can edit/input the text into the 
+file/editor.here any key press we do will be taken as a command by editor and will perform a relevant operation.
+To enter into command mode we need use [ESC] key.by default.
+
+ 
+
+2.input Mode
+
+Input mode any key press will be taken as input and will writes on to the file to enter into input mode you should press [i] key on the keyword.
+
+
+
+3.Exit Mode
+ 
+In this we are going to quit from the editor.
+First we should be back to command mode by [ESC] and should type :q[quit].
+
+
+
+VI filename [existing file open it's contents][new file shows as blank]
+
+
+
+With the default installation of Ubuntu vi older version will be prasent.Now we can upgrade latest VIM editor by doing the below.
+
+
+
+Sudo apt-get update 
+
+Sudo apt-get install vim 
+
+
+
+What are the command we use in vi in command mode.
+
+A=append the contents to the end of the file.
+
+a=appends the contents from the current cursor position
+ 
+I=insert contents from the beginning of the line.
+
+i=insert contents from the current cursor position.
+
+R=replace character from current cursor position.
+
+S=replace the entire line.
+
+YY=yank(copy)
+
+2YY=copy 2 lines.
+
+P=paste
+
+X=to delete a character.
+
+DW=delete word.
+
+2 dd=delete 2 line.
+
+o=open a new line below the cursor position. 
+
+O=open a new line above the cursor position.
+
+b=move cursor back to words at the ends of the word
+ 
+w=forward to the next word
+ 
+e=move cursor to the end of the current word 
+
+u=undo
+
+[ESC]:1=to goto the beginning of the first line 
+Shift+G=end of the file.
+
+:q=quit 
+
+:w=write 
+
+:q!=quit with out saving.
+ 
+[ESC]\=Searching a word then press enter 
+If we press  "N" next word  "B" previous word matching [ESC]
+
+Ctrl+f=page forward 
+
+Ctrl+b=page backward 
+
+Gedit
+
+ firoj.txt
+
+@@@@@@@@@@@@@@@@@@@@@@@@
+
+nano editor 
+
+nano filename 
+
+Ctrl+o=save file
+ 
+Ctrl+x=quit 
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+Tar -cvf firoj.tar firoj/
+
+du -h firoj
+
+du -h firoj.tar 
+
+tar -xvf firoj.tar -C ~
+
+gzip firoj.tar 
+
+du -h firoj.tar.gz
+
+gunzip firoj.tar.gz
+
+
+
+Importent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+User management
+ 
+Linux is a multi-user operating system ,multiple users can login and access the system resources at the same time.
+
+
+
+In Linux we have two types of users
+ 
+1.ROOT user=there can be only 1 ROOT user of a Linux install.he has total control of the enter system resource.
+
+1.1 CREATE OTHER USERS 
+
+1.2 MODIFY OTHER USERS 
+
+1.3 CAN MANAGE ANY FILES ON THE DEVICE
+ 
+1.4 CAN MANAGE PROCES 
+
+
+
+2.Normal user =Other than the one ROOT any user we add into linux becomes Normal User.
+The Normal user can only see /his/her file under the user home directory but can not have access to any system resource.
+
+
+
+Useradd username
+ 
+useradd -u uid -g gid -d /home/directory -s shell 
+
+sudo su - =will switch the user into root prompt 
+By default th terminal will not be opened with root privilige
+To protected accidental damage to the system resuorce.
+
+sudo su -
+
+
+
+
+Packaging and compression
+ 
+If i want to package the contents of a directory or group of file together into one single file then use packaging.
+
+tar  --usage | grep add
+
+tar=tarball
+
+-x=extracting 
+
+-v=verbose
+ 
+-f=archive name
+
+-t=table of contents
+ 
+-c=create
+ 
+--delete =to delete a file inside the tar 
+
+--add-f=to add a file into existing tar
+
+tar -- delete -f firoj.tar index.jpeg
+
+ 
+
+What is the different between a ROOT AND SUDOERS?
+
+A ROOT user can perform any operation on the linux machine like adding a user or removing /disabling the user ,but a sudoer can only perform super user commands only cannot change any other user on Linux system.
+
+
+
+
+Networking command 
+
+sudo apt-get install -y net-tool=install net-tools package for using ifconfig command.
+
+Ifconfig=displays the ip address and network adapter information.
+
+
+
+ping serverName=checks the communication line b/w client and the server and rate of transmission.
+
+
+
+Whoami=current logged in user information
+ 
+logname
+
+
+
+Users 
+
+Who=both commands returns currently logged in users of the linux
+
+ 
+
+hostname =name of the computer
+ 
+hostname -i=ip addressed
+ 
+Ifconfig=net-tools package should be installed 
+
+Ping=to reach the destination server
+
+free -h =ram space
+ 
+Top=show all the current running process of the machine.
+
+
+
+??????????????????????????????????????
+
+cat/proc/cpuinfo=file contains the information about the processor of your machine.
+
+lshw=list hardware computer
+ 
+reboot=reboot computer
+ 
+reboot -f=fast reboot
+ 
+Init 0=power off
+
+Init 6=restart 
+
+
+
+???????????????????????????????????????????????????
+
+df -k
+
+du -sh filename 
+
+Mount=points 
+
+
+Process related command 
+
+top=to see the process running on the linux system
+ 
+PID=process id 
+
+USER=owner
+ 
+PR
+
+Ni=Nice Value 
+
+VIRT=virtual memory 
+
+RES =reserved memory 
+
+SHR=shared memory 
+ S=status 
+
+ %CPU 
+
+ %MEM 
+ 
+TIME+ COMMAND =command used to run the process 
+
+
+  ps=process status 
+ 
+ps -UX=current user running process including background process.
+
+ P
+ 
+ps -ef=show all the user process running on the system
+
+
+
+How to kill a running process
+ 
+Kill[PID]
+
+kil
+l -9 [PID]=forceful termination 
+
+
+
+What is a process.
+Program under execution is called a process.
+
+
+There are 2 types of process are there in Linux 
+
+1.Foreground process=upon running a program on a shell by default the process execute as a foreground 
+Process, this means it blocks the shell and allows the user to interact with the program.
+We can terminate these programs by pressing ctrl+c.
+
+
+
+In a foreground process if we close the terminal window linux will send an hangup signal to the program asking to terminate so that program execution will be stopped and quit.
+
+
+Long running programs 
+
+
+
+2.background process =Background process returns the terminal window of the user and doesn't allow the user to interact with the program.the only way to monitor the program is using top /ps and to stop execution we need to use kill.
+
+
+
+There are two ways in running a program as a background program.
+
+1.command &=this makes the program run as background
+ 
+2.nohup command =nohup stands for no hangup.
+So even we terminate the shell the nohup will not passes the hangup single to the command making it run for long time.
+
+There difference b/w nohup and & is
+ 
+Bash cal.sh &=the output will be redirected to standout.and if we close the console the output will be lost.
+
+nohup bash cal.sh &=nohup automatically redirects the output of the background process the default file called nohup.out.
+so that we see the output of the program.
+nohup will not runs the. Program in background it helps only in redirecting.
